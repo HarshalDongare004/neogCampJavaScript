@@ -6,12 +6,21 @@
 // }
   
 let btnTranslate = document.querySelector('#btn-translate')
-//     .addEventListener("click", function clickBtn() {
+let txtTranslate = document.querySelector("#text-translate")
+// console.log(txtTranslate)
+
+function clickHandler()
+{
+  console.log("Clicked")
+  console.log("input", txtTranslate.value)
+ }
+
+//     .addEventListener("click", function clickBtn() { 
 //     alert("btn was clicked")
 // }
 //   )
 
-btnTranslate.addEventListener("click", function clickEventHandler() {
-    console.log("Btn was clicked")
-  })
+btnTranslate.addEventListener("click", clickHandler)
 // console.log(btnTranslate)
+
+
