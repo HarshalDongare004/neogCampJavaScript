@@ -7,12 +7,14 @@
   
 let btnTranslate = document.querySelector('#btn-translate')
 let txtTranslate = document.querySelector("#text-translate")
+let outputText = document.querySelector("#output")
+
+outputText.innerText= ""
 // console.log(txtTranslate)
 
 function clickHandler()
 {
-  console.log("Clicked")
-  console.log("input", txtTranslate.value)
+  outputText.innerText = "Translated " + txtTranslate.value
  }
 
 //     .addEventListener("click", function clickBtn() { 
@@ -22,5 +24,10 @@ function clickHandler()
 
 btnTranslate.addEventListener("click", clickHandler)
 // console.log(btnTranslate)
+
+// document.querySelector("textarea")
+//   .btnPrimary
+// #btn-primary
+
 
 
